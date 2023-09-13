@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 def to_subtract(list_num):
-    sub = 0
-    maxList = max(list_num)
+    to_sub = 0
+    max_list = max(list_num)
 
-    for i in list_num:
+    for n in list_num:
         if max_list > n:
-            sub += i
+            to_sub += n
 
-    return (maxList - sub)
+    return (max_list - to_sub)
 
 
 def roman_to_int(roman_string):
