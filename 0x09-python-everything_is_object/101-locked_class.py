@@ -4,7 +4,8 @@
 
 class LockedClass:
     """
-    stope user from instantiating new LockedClass
+    prevents the user from dynamically creating new instance attributes,
+    except if the new instance attribute is called 'first_name'.
     """
 
-    __slots__ = ['firs_name']
+    __slots__ = ['first_name']
