@@ -1,4 +1,4 @@
-# Define the base string
+#!/usr/bin/python3
 """define a LockedClass class """
 
 
