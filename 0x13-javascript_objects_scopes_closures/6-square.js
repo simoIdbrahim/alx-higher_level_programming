@@ -1,5 +1,4 @@
 #!/usr/bin/node
-const SquareBase = require('./5-square');
 
 const SquareBase = require('./5-square');
 
