@@ -10,5 +10,7 @@ Base = declarative_base()
 
 class State(Base):
     """Class State"""
-    id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True)
-    name = sqlalchemy.Column(sqlalchemy.String(128))
+    __tablename__ = 'states'
+    id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True,
+                           nullable=False, autoincrement=True)
+    name = sqlalchemy.Column(sqlalchemy.String(128), nullable=False)
