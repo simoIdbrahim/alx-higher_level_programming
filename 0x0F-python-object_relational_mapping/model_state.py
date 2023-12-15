@@ -6,10 +6,11 @@ import sqlalchemy
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
+db = sqlalchemy
 
 
 class State(Base):
-    """Class State"""
+    """ create table """
     __tablename__ = 'states'
-    id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True)
-    name = sqlalchemy.Column(sqlalchemy.String(128))
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(128))
