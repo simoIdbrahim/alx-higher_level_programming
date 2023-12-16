@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ relations database """
 
 from sqlalchemy import Column, Integer, String, ForeignKey
