@@ -9,9 +9,9 @@ req.get(process.argv[2], function (err, res, body) {
     JSON.parse(body).forEach(task => {
       if(task.completed === true) {
         if(!data[ task.userId ]) {
-          data[ task.userId ] = 1;
+          data[task.userId] = 1;
         } else {
-          data[ task.userId ]++;
+          data[task.userId]++;
         }
       }
     });
