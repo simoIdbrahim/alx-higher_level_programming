@@ -5,13 +5,13 @@ const url = process.argv[2];
 const characterId = '18';
 let count = 0;
 
-request.get(url, (err, res, body) => {
-  if (err) {
+req.get(url, (err, res, body) => {
+  if(err) {
     console.log(err);
   } else {
     JSON.parse(body).results.forEach((film) => {
       film.characters.forEach((character) => {
-        if (character.includes(characterId)) {
+        if(character.includes(characterId)) {
           count += 1;
         }
       });
