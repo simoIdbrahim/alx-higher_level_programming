@@ -16,4 +16,3 @@ req.get(url, (err, res, body) => {
     });
   }
 });
-
